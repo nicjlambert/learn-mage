@@ -1,1 +1,1 @@
-FROM mage-ai:latest
+FROM docker.io/library/mage-ai:latest
