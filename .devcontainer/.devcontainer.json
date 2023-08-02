@@ -1,0 +1,14 @@
+{
+    "name": "My Docker Environment",
+    "image": "mageai/mageai:latest", // Replace this with the Docker image you want to use
+    "extensions": [ // Optional: List of VS Code extensions to install in the Codespace
+      "ms-python.python",
+      "visualstudioexptteam.vscodeintellicode"
+    ],
+    "postCreateCommand": "mage start demo_project", // The command to run inside the container after it's created
+    "settings": { // Optional: VS Code settings specific to the Codespace
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "forwardPorts": [6789] // Optional: List of ports to forward from the container to the Codespace
+  }
+  
