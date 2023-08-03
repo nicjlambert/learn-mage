@@ -1,0 +1,11 @@
+{
+  "name": "Mage Devcontainer",
+  "image": "mageai/mageai:latest",
+  "extensions": ["ms-vscode-remote.remote-containers"],
+  "workspaceFolder": "/home/src",
+  "appPort": 6789,
+  "postCreateCommand": "/app/run_app.sh mage start",
+  "environment": {
+    "POSTGRES_PASSWORD": "password"
+  }
+}
